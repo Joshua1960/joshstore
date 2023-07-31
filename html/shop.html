@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/shop.css">
+    <title>product and Filter Search</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header">
+		<div class="main-header">
+			<div class="logo"><img src="../images/shopping_cart_promotion.svg"><h4>JOSH</h1><span>STORE</span></div>
+			<div class="nav-container">
+			<div><a class="nav-cont" href="../html/Josh-store.html">Home</a></div>
+			<div><a class="nav-cont" href="shop.html">Shop</a></div>
+			<div><a class="nav-cont" href="../html/Josh-store.html">Promotion</a></div>
+			<div><a class="nav-cont" href="../html/Josh-store.html">Blog</a></div>
+			<div><a class="nav-cont" href="../html/Josh-store.html">Contacts</a></div>
+			</div>
+			<div class="nav-bar-icons">
+				<!-- <a href="profile.html" target="_self"><img class="nav-icons" src="../images/user.svg"></a> -->
+				<div class="nav-icons"><a href="../html/profile.html"><img src="../images/user.svg"></a></div>
+				<div id="nav-icons" ><a href="#"><img aria-hidden="true" class="nav-icons" src="../images/shopping_cart.svg"></a>
+					<span>2</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+    <!-- Header -->
+    <h1 class="shop">SHOP</h1>
+    <div class="wraper">  
+        <div id="search-container">
+            <input type="search" name="search" id="search-input" placeholder="Search product name here">
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <div class="button-value" onclick="filterProduct('all')">All</div>
+            <div class="button-value" onclick="filterProduct('Women')">Women</div>
+            <div class="button-value" onclick="filterProduct('Unisex')">Unisex</div>
+            <div class="button-value" onclick="filterProduct('Men')">Men</div>
+        </div>
+        <div id="products"></div>
+    </div>
+
+
+
+   <script src="../javascript/shop.js"></script>
+
+</body>
+
+</html>
